@@ -15,3 +15,5 @@ C:\Users\bsvir\source\repos\UITests\UITests\bin\Debug\WebDriver.Support.xml
 C:\Users\bsvir\source\repos\UITests\UITests\obj\Debug\UITests.csproj.CoreCompileInputs.cache
 C:\Users\bsvir\source\repos\UITests\UITests\obj\Debug\UITests.exe
 C:\Users\bsvir\source\repos\UITests\UITests\obj\Debug\UITests.pdb
+C:\Users\bsvir\source\repos\UITests\UITests\bin\Debug\log4net.dll
+C:\Users\bsvir\source\repos\UITests\UITests\bin\Debug\log4net.xml

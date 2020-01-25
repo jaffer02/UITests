@@ -12,20 +12,30 @@ namespace UITests.PageObjectsAndActions
 {
     public class MainMenuNavigation
     {
-        public enum Assets_Navigation
+        public enum AutomationTools_Navigation
         {
-            [Description("Asset Search")]
-            AssetSearch,
-            [Description("Advanced Asset Search")]
-            AdvancedAssetSearch
+            [Description("Selenium")]
+            Selenium,
+            [Description("BDD")]
+            BDD
         };
 
-        public enum Reports_Navigation
+        public enum Selenium_Navigation
         {
-            [Description("Asset Report")]
-            AssetReport,
-            [Description("Advanced Asset Report")]
-            AdvancedAssetReport
+            [Description("Selenium WebDriver")]
+            SeleniumWebDriver,
+            [Description("Selenium RC")]
+            SeleniumRC,
+            [Description("Selenium IDE")]
+            SeleniumIDE
+        };
+
+        public enum BDD_Navigation
+        {
+            [Description("Specflow")]
+            Specflow,
+            [Description("Cucumber")]
+            Cucumber
         };
 
         private static void clickMenuItem(String menuItem)
@@ -51,10 +61,15 @@ namespace UITests.PageObjectsAndActions
             return null;
         }
 
-        public static void SelectAssets_Function(Assets_Navigation function)
+        public static void SelectAutomationTools_Function(AutomationTools_Navigation function)
         {
-            getMenu("Assets").Click();
+            getMenu("Automation Tools").Click();
             clickMenuItem(CommonOperations.GetEnumDescription(function));
+        }
+
+        public static void SelectDragAndDrop_Function()
+        {
+            getMenu("Drag and Drop").Click();
         }
     }
 }

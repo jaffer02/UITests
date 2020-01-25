@@ -19,7 +19,8 @@ namespace UITests.PageObjectsAndActions
         {
             try
             {
-                var url = ConfigurationManager.AppSettings[Globalclass.envToTest];
+                //var url = ConfigurationManager.AppSettings[Globalclass.envToTest];
+                var url = ConfigurationManager.AppSettings["QA"];
                 BrowserOperations.LoadDriver(url);
 
                 userName_TextObject = Globalclass.driver.FindElement(By.Id("username"));

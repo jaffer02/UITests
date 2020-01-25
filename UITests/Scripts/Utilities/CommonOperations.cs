@@ -128,9 +128,9 @@ namespace UITests.Scripts.Utilities
             //Globalclass.sqlinputFolder = getnormalizedLocation("sqlinputFolder");
             var downloadFolder = ConfigurationManager.AppSettings["browserDownloadfolder"];
 
-            clearDirectory(downloadFolder);
+            //clearDirectory(downloadFolder);
 
-            //TestStartup.getUserPwdAndEnv();
+            TestStartup.getUserPwdAndEnv();
             DBOperation.setDBConnection();
             var folderForScreenshot = Path.Combine(resultlocation, getday());
             Console.WriteLine("folderForScreenshot : " + folderForScreenshot);

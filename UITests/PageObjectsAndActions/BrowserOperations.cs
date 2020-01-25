@@ -18,6 +18,8 @@ namespace UITests.PageObjectsAndActions
             options.AddAdditionalCapability("useAutomationExtension", false);
             var driver = new ChromeDriver(options);
 
+            //IWebDriver driver1 = new ChromeDriver();
+
             driver.Navigate().GoToUrl(URL);
             driver.Manage().Window.Maximize();
             Globalclass.driver = driver;
